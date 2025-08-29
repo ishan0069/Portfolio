@@ -1,0 +1,106 @@
+#contact h5 {
+    padding-top: 1rem;
+}
+
+.contact_container {
+    width: 80%;
+    max-width: 68.75rem;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    /* margin-left: 10rem;*/
+    align-items: start;
+}
+
+.contact_options {
+    display: flex;
+    /* flex-direction: column; */
+    /* grid-template-rows: repeat(3, 1fr); */
+    flex-direction: column;
+    gap:0.75rem;
+    /* height: 100%; */
+}
+
+.contact_option {
+    background: var(--color-bg-variant);
+    padding: 1rem 0 1rem 0;
+    border-radius: 1rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-height: 7.9rem;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;   /* ✅ centers icon + text horizontally */
+    justify-content: center; /* ✅ centers content vertically */
+    gap: 0.5rem;
+}
+
+.contact_option h4 {
+    margin: 0; 
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.contact_option h5 {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--color-light); 
+}
+
+.contact_option a {
+    margin-top: 0.3rem;
+    font-size: 0.50rem;
+    color: var(--color-primary);
+    padding-bottom: 0.5rem;
+}
+
+.contact_option:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+}
+
+.contact_option-icon {
+    font-size: 2rem;        /* ✅ bigger, consistent icon size */
+    margin-bottom: 0.3rem;  /* ✅ space between icon and title */
+}
+
+.contact_option a {
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 0.9rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 0.25rem;
+    border-radius: 1rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid var(--color-primary-variant);
+    resize: both;
+    color: var(--color-white);
+}
+
+@media screen and (max-width : 1024px) {
+    .container contact_container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container contact_container {
+        width: var(--container-width-sm);
+    }
+}

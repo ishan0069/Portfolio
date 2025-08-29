@@ -1,0 +1,67 @@
+#project h5 {
+    padding-top: 2.3rem;
+}
+
+.project_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));;
+    gap: 0.1rem;
+    /* margin-left: 10rem;
+    margin-right: 10rem; */
+    padding: 2rem 4rem;
+    justify-content: center;
+}
+
+.project_item {
+    background: var(--color-bg-variant);
+    padding: 1.3rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    text-align: center; /* keeps everything aligned */
+    max-width: 360px; /* prevent too big cards */
+    margin: 0 auto;
+}
+
+.project_item:hover {
+    border-color: var(--color-primary-variant);
+    background: transparent;
+}
+
+.project_item-image {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    height: 12.5rem;
+    margin-bottom: 1rem;
+}
+
+.project_item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* keeps aspect ratio clean */
+}
+
+.portflow_item h3 {
+    margin: 0.8rem 0 1rem;
+}
+
+.project_item-cta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+     margin-top: 0.8rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .project_container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .project_container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}

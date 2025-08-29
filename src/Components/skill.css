@@ -1,0 +1,85 @@
+section #skill {
+  scroll-margin-top: 6rem; 
+  padding-top: 4rem;   
+}
+
+#skill h5 {
+    padding-top: 2.3rem;
+}
+
+.skill_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    /* margin-left: 10rem;
+    margin-right: 10rem; */
+    margin: 0 auto;          /* center content */
+    max-width: 70rem;        /* keep it compact */
+    padding: 0 2rem;         /* responsive padding */
+    margin-bottom: 3rem;
+}
+
+.skill_container > div {
+    background: var(--color-bg-variant);
+    padding: 2rem 3rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+}
+
+.skill_container > div:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+
+.skill_container > div h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+}
+
+.skill_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1.2rem;
+}
+
+.skill_detaiils {
+    display: flex;
+    gap: 1rem;
+}
+
+.skill_details small {
+  font-size: 1rem;   /* smaller, consistent */
+  color: var(--color-light);
+}
+
+.experience_details-icon {
+    margin-top: 6px;
+    color: var(--color-primary);
+}
+
+
+@media screen and (max_width: 1024px) {
+    .skill_container {
+        grid-template-columns: 1fr;
+    }
+    .skill_container > div {
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+    .skill_content {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .skill_container {
+        gap: 1rem;
+    }
+    .skill_container > div {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+}

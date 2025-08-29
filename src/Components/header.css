@@ -1,0 +1,185 @@
+header {
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.header_container {
+    text-align : center;
+    height: 100%;
+    position: relative;
+}
+
+.name {
+    font-weight: 700;
+}
+
+.text-light {
+    font-size: 1.3rem;   /* bigger typing text */
+    font-weight: 600;
+    color: var(--color-light);
+}
+
+.cta {
+    margin-top : 2.5rem;
+    display: flex;
+    gap : 1.2rem;
+    justify-content: center;
+}
+
+/* .header_socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+.header_socials {
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+    margin-left: 10rem;
+} */
+
+.header_socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 7rem;
+    bottom: 3rem;
+}
+
+.header_socials::after {
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+.header_socials a {
+    font-size: 1.3rem;            /* bigger size */
+    color: var(--color-primary);
+    transition: all 0.3s ease;
+}
+
+.header_socials a:hover {
+    color: var(--color-light);  /* lighter color on hover */
+    transform: scale(1.25);     /* smooth zoom */
+}
+
+/* .header_container .me {
+    background: var(--color-primary);
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+    object-fit: cover;
+} */
+
+/* .scroll_down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+    margin-right: 10rem;
+} */
+
+/* .scroll_down {
+    position: absolute;
+    right: 7rem;
+    bottom: 3rem;
+    transform: rotate(90deg);
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--color-primary);
+} */
+
+.scroll_up {
+    position: fixed;       /* make it sticky/floating */
+    right: 2rem;           /* distance from right */
+    bottom: 6rem;          /* distance from bottom */
+    background: var(--color-primary);
+    color: white;
+    padding: 0.6rem 1rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.scroll_up:hover {
+    background: var(--color-light);
+    color: var(--color-bg);
+    transform: scale(1.1);
+}
+
+.scroll_down {
+    position: fixed;       /* make it sticky/floating */
+    right: 2rem;           /* distance from right */
+    bottom: 2rem;          /* distance from bottom */
+    background: var(--color-primary);
+    color: white;
+    padding: 0.6rem 1rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.scroll_down:hover {
+    background: var(--color-light);
+    color: var(--color-bg);
+    transform: scale(1.1);
+}
+
+.scroll_up.disabled,
+.scroll_down.disabled {
+  pointer-events: none; /* stops clicks */
+  opacity: 0.4;         /* looks disabled */
+  cursor: not-allowed;
+}
+
+.cursor {
+  display: inline-block;
+  width: 1px;
+  background-color: white;
+  margin-left: 2px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+
+@media screen and (max-width: 1024px) {
+    header {
+        height: 68vh;
+    }
+}
+
+@media screen and (max-width: 600px){
+    header {
+        height: 100vh;
+    }
+    .header_socials, .scroll_down {
+        display: none;
+    }
+}
