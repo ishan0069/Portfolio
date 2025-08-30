@@ -39,9 +39,8 @@ const about = () => {
           </div>
 
           <p>
-            Hi, I am Ishan — a passionate B.Tech student eager to kickstart my career in tech. I enjoy building projects that blend creativity with problem-solving, and I am constantly exploring new tools and technologies to sharpen my skills. Being a fresher, I bring curiosity, adaptability, and the drive to learn quickly. My goal is to contribute meaningfully to impactful projects while growing into a well-rounded professional.
+            Hi, I’m Ishan — a B.Tech student passionate about tech and problem-solving. I love building creative projects, exploring new tools, and sharpening my skills. As a fresher, I bring curiosity, adaptability, and a drive to learn fast. My goal is to grow into a well-rounded professional while contributing to impactful projects.
           </p>
-
           <a href="#contact" className="btn btn-primary">Let's Talk</a>
         </div>
       </div>

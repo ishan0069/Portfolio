@@ -13,7 +13,8 @@
 
 :root {
   --color-bg : #0F172A;
-  --color-bg-variant : #2c2c6c;
+  /* --color-bg-variant : #2c2c6c; */
+  /* --color-bg-variant : #4fc3f7; */
   --color-primary : #4db5ff;
   --color-primary-variant : rgba(77,181,255,0.4);
   --color-white : #fff;
@@ -23,7 +24,7 @@
 
   --container-wiidth-lg : 75%;
   --container-width-md : 86%;
-  --container-wiidth-sm : 90%;
+  --container-width-sm : 90%;
 }
 
 html {
@@ -36,13 +37,13 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background: var(--color-bg);
+  background: transparent;
   color: var(--color-white);
   line-height: 1.7;
   /* background-image: url(../src/Assets/image2.jpg); */
 }
 
-.conatiner {
+.container {
   width : var(--container-width-lg);
   margin : 0 auto;
 }
@@ -129,4 +130,3 @@ img {
     margin-bottom : 2rem;
   }
 }
-

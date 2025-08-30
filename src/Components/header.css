@@ -15,7 +15,7 @@ header {
 }
 
 .text-light {
-    font-size: 1.3rem;   /* bigger typing text */
+    font-size: 1.3rem;   
     font-weight: 600;
     color: var(--color-light);
 }
@@ -27,33 +27,19 @@ header {
     justify-content: center;
 }
 
-/* .header_socials {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-    position: absolute;
-    left: 0;
-    bottom: 3rem;
+.header_socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+
+  position: absolute;        
+  left: 5rem;
+  top: 75%;               
+  transform: translateY(-50%);
+  z-index: 1000;
 }
 
-.header_socials {
-    content: '';
-    width: 1px;
-    height: 2rem;
-    background: var(--color-primary);
-    margin-left: 10rem;
-} */
-
-.header_socials {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-    position: absolute;
-    left: 7rem;
-    bottom: 3rem;
-}
 
 .header_socials::after {
     content: '';
@@ -63,17 +49,17 @@ header {
 }
 
 .header_socials a {
-    font-size: 1.3rem;            /* bigger size */
+    font-size: 1.3rem;            
     color: var(--color-primary);
     transition: all 0.3s ease;
 }
 
 .header_socials a:hover {
-    color: var(--color-light);  /* lighter color on hover */
-    transform: scale(1.25);     /* smooth zoom */
+    color: var(--color-light);  
+    transform: scale(1.25);    
 }
 
-/* .header_container .me {
+.header_container .me {
     background: var(--color-primary);
     width: 22rem;
     height: 30rem;
@@ -84,32 +70,12 @@ header {
     overflow: hidden;
     padding: 5rem 1.5rem 1.5rem 1.5rem;
     object-fit: cover;
-} */
-
-/* .scroll_down {
-    position: absolute;
-    right: -2.3rem;
-    bottom: 5rem;
-    transform: rotate(90deg);
-    font-weight: 300;
-    font-size: 0.9rem;
-    margin-right: 10rem;
-} */
-
-/* .scroll_down {
-    position: absolute;
-    right: 7rem;
-    bottom: 3rem;
-    transform: rotate(90deg);
-    font-weight: 400;
-    font-size: 1rem;
-    color: var(--color-primary);
-} */
+}
 
 .scroll_up {
-    position: fixed;       /* make it sticky/floating */
-    right: 2rem;           /* distance from right */
-    bottom: 6rem;          /* distance from bottom */
+    position: fixed;       
+    right: 2rem;          
+    bottom: 6rem;          
     background: var(--color-primary);
     color: white;
     padding: 0.6rem 1rem;
@@ -128,9 +94,9 @@ header {
 }
 
 .scroll_down {
-    position: fixed;       /* make it sticky/floating */
-    right: 2rem;           /* distance from right */
-    bottom: 2rem;          /* distance from bottom */
+    position: fixed;       
+    right: 2rem;           
+    bottom: 2rem;          
     background: var(--color-primary);
     color: white;
     padding: 0.6rem 1rem;
@@ -148,12 +114,14 @@ header {
     transform: scale(1.1);
 }
 
+
 .scroll_up.disabled,
 .scroll_down.disabled {
-  pointer-events: none; /* stops clicks */
-  opacity: 0.4;         /* looks disabled */
+  pointer-events: none; 
+  opacity: 0.4;         
   cursor: not-allowed;
 }
+
 
 .cursor {
   display: inline-block;

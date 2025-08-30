@@ -1,18 +1,15 @@
 section #about {
-    scroll-margin-top: 6rem; /* fixes scroll so it doesn’t hide under navbar */
-    padding-top: 4rem;       /* adds breathing space from top */
+    scroll-margin-top: 6rem;
+    padding-top: 4rem;
 }
 
 .about_container {
     display: grid;
     grid-template-columns: 32% 55%;
     gap: 8%;
-    /* margin-left: 10rem;
-    margin-right: 7rem;
-    max-width: 68.75rem; */
-    margin: 0 auto; /* center content */
-    max-width: 68.75rem; /* keep it responsive */
-    padding: 0 2rem; /* keep side padding instead of hard margins */
+    margin: 0 auto;
+    max-width: 68.75rem;
+    padding: 0 2rem; 
 }
 
 .about_me {
@@ -49,8 +46,9 @@ section #about {
 }
 
 .about_card {
-    background: var(--color-bg-variant);
-    border: 1px solid transparent;
+    background: none;
+    backdrop-filter: blur(1.5rem);
+    border: 2px solid transparent;
     border-radius: 1rem;
     padding: 2rem;
     text-align: center;
@@ -58,7 +56,8 @@ section #about {
 }
 
 .about_card:hover {
-    background: transparent;
+    background: none;
+    backdrop-filter: blur(2rem);
     border-color: var(--color-primary-variant);
     cursor: default;
 }
@@ -79,7 +78,7 @@ section #about {
 }
 
 .about_content p {
-    margin: 2rem 0 2.6rem;
+    margin: 2rem 0 2rem;
     color: var(--color-light);
 }
 
@@ -109,7 +108,7 @@ section #about {
     .about_content {
         text-align: center;
     }
-    .aabout_content p {
+    .about_content p {
         margin: 1rem 0 1.5rem;
     }
 }

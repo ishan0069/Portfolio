@@ -13,10 +13,11 @@
 }
 
 .project_item {
-    background: var(--color-bg-variant);
+    background: none;
+    backdrop-filter: blur(1.5rem);
     padding: 1.3rem;
     border-radius: 2rem;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     transition: var(--transition);
     text-align: center; /* keeps everything aligned */
     max-width: 360px; /* prevent too big cards */
@@ -25,7 +26,8 @@
 
 .project_item:hover {
     border-color: var(--color-primary-variant);
-    background: transparent;
+    background: none;
+    backdrop-filter: blur(2rem);
 }
 
 .project_item-image {
@@ -64,4 +66,4 @@
         grid-template-columns: 1fr;
         gap: 1rem;
     }
-}
+} 

@@ -20,14 +20,16 @@ section #skill {
 }
 
 .skill_container > div {
-    background: var(--color-bg-variant);
+    background: none;
+    backdrop-filter: blur(1.5rem);
     padding: 2rem 3rem;
     border-radius: 2rem;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
 }
 
 .skill_container > div:hover {
-    background: transparent;
+    background: none;
+    backdrop-filter: blur(2rem);
     border-color: var(--color-primary-variant);
     cursor: default;
 }
@@ -82,4 +84,4 @@ section #skill {
         width: 100%;
         padding: 2rem 1rem;
     }
-}
+} 

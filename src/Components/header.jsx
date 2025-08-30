@@ -94,10 +94,6 @@ const Header = () => {
         </h5>
         <CTA />
         <HeaderSocials />
-
-        {/* <div className="me">
-                    <img src={ME} alt="me" />
-                </div> */}
         <a
           className={`scroll_up ${atTop ? "disabled" : ""}`}
           onClick={!atTop ? scrollToPrevSection : null}
